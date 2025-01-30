@@ -1,0 +1,9 @@
+import { Knex } from "knex";
+
+exports.seed = async function(knex: Knex) {
+  // Deletes ALL existing entries
+  await knex('table_name').del()
+  await knex('table_name').insert([
+    {  },
+  ]);
+};
